@@ -1,0 +1,9 @@
+<h1>Projects</h1>
+<h2>Projects List 🔖</h2>
+<%= image_tag asset_path("puppy.jpeg"), width: 400 %>
+<ul>
+    <% @projects.each do |project| %>
+        <%= render partial: "card", locals: { project: project } %>
+    <% end %>
+</ul>
+

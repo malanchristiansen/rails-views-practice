@@ -1,0 +1,10 @@
+<h1>Project</h1>
+
+<ul>
+    <li> <%= link_to @project[:name], project_path(@project[:id]) %> </li>
+	<ul>
+		<li>Github status: <%= @project[:github_status] == true ? "✅" : "❌" %></li>
+		<li>Date completed: <%= @project[:date_completed] %></li>
+	</ul>
+</ul>
+
